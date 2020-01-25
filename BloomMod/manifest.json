@@ -1,0 +1,15 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/beat-saber-modding-group/BSIPA-MetadataFileSchema/master/Schema.json",
+  "author": "Ibodan",
+  "description": "Adds more bloom to the game",
+  "gameVersion": "1.6.2",
+  "id": "Bloom Mod",
+  "name": "Bloom Mod",
+  "version": "2.0.0",
+  "features": [
+
+  ],
+  "dependsOn": {
+    
+  }
+}

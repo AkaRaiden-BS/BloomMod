@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections;
-using IllusionPlugin;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
 using System.Collections.Generic;
+using IPA;
+using Zenject;
 
 namespace BloomMod
 {
-	public class Plugin : IPlugin
+	public class Plugin : IBeatSaberPlugin
 	{
 		public string Name => "BloomMod";
 		public string Version => "1.0.3";
@@ -42,7 +43,7 @@ namespace BloomMod
 			}
 		}
 
-		private void SceneTransitionDidFinish()
+		private void SceneTransitionDidFinish(ScenesTransitionSetupDataSO Spoons, DiContainer Forks)
 		{
 			if (co != null) SharedCoroutineStarter.instance.StopCoroutine(co);
 
@@ -167,5 +168,20 @@ namespace BloomMod
 		public void OnFixedUpdate()
 		{
 		}
-	}
+
+        public void OnSceneLoaded(Scene scene, LoadSceneMode sceneMode)
+        {
+            
+        }
+
+        public void OnSceneUnloaded(Scene scene)
+        {
+           
+        }
+
+        public void OnActiveSceneChanged(Scene prevScene, Scene nextScene)
+        {
+           
+        }
+    }
 }

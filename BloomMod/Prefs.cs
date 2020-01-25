@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using IllusionPlugin;
+using IPA.Config;
 using UnityEngine;
 
 namespace BloomMod
