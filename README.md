@@ -12,6 +12,7 @@ put dll into Plugins directory
 ### Intialize config file with default value
 
 First, start BeatSaber and **play any map for seconds** and quit.
+If the modprefs.ini does not contain **Reset=0**, In the [BloomMod] section add it on a new line.
 
 ### Modify config file
 
